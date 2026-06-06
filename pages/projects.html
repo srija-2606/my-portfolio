@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore Alex Rivera's portfolio of full-stack development and UI/UX design projects, including web apps, e-commerce platforms, and mobile applications." />
+  <meta name="keywords" content="portfolio projects, web development, React, Node.js, UI UX design, case studies" />
+  <meta name="author" content="Alex Rivera" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Projects | Alex Rivera" />
+  <meta property="og:description" content="A showcase of full-stack development and design projects by Alex Rivera." />
+  <meta property="og:url" content="https://alexrivera.dev/pages/projects.html" />
+
+  <title>Projects | Alex Rivera</title>
+  <link rel="canonical" href="https://alexrivera.dev/pages/projects.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Alex Rivera – Home"><span aria-hidden="true">AR</span></a>
+      <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content" tabindex="-1">
+
+    <section class="page-hero" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="hero-eyebrow">My Work</p>
+        <h1 id="projects-heading">Projects</h1>
+        <p class="page-hero-desc">A selection of things I've built — from concept to deployment.</p>
+      </div>
+    </section>
+
+    <!-- Filter Controls -->
+    <section class="filter-section" aria-labelledby="filter-heading">
+      <div class="container">
+        <h2 id="filter-heading" class="sr-only">Filter Projects</h2>
+        <div class="filter-controls" role="group" aria-label="Filter projects by category">
+          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+          <button class="filter-btn" data-filter="web" aria-pressed="false">Web App</button>
+          <button class="filter-btn" data-filter="ecommerce" aria-pressed="false">E-Commerce</button>
+          <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button class="filter-btn" data-filter="design" aria-pressed="false">Design</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="projects-full" aria-labelledby="all-projects-heading">
+      <div class="container">
+        <h2 id="all-projects-heading" class="sr-only">All Projects</h2>
+        <div class="projects-grid projects-grid--full" role="list" id="projects-list" aria-live="polite" aria-label="Projects list">
+
+          <article class="project-card project-card--full" role="listitem" data-category="web">
+            <div class="project-img project-img--large" aria-hidden="true" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">
+              <span class="project-tag">Web App</span>
+            </div>
+            <div class="project-info">
+              <h3>FinTrack Dashboard</h3>
+              <p>A real-time personal finance tracker with interactive charts, budget alerts, and fully accessible data tables. Built with React, D3.js, and a Node.js/PostgreSQL backend. WCAG AA compliant.</p>
+              <ul class="tech-stack" aria-label="Technologies used">
+                <li>React</li><li>D3.js</li><li>Node.js</li><li>PostgreSQL</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View FinTrack source code on GitHub (opens in new tab)">GitHub</a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="View FinTrack live demo">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--full" role="listitem" data-category="ecommerce">
+            <div class="project-img project-img--large" aria-hidden="true" style="background: linear-gradient(135deg,#0f3460,#533483);">
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-info">
+              <h3>ShopEase Platform</h3>
+              <p>Fully accessible e-commerce platform with keyboard navigation, ARIA live regions for cart updates, and WCAG AA compliance. Achieved a perfect Lighthouse accessibility score.</p>
+              <ul class="tech-stack" aria-label="Technologies used">
+                <li>Next.js</li><li>Stripe</li><li>Tailwind</li><li>MongoDB</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View ShopEase source code on GitHub (opens in new tab)">GitHub</a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="View ShopEase live demo">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--full" role="listitem" data-category="mobile">
+            <div class="project-img project-img--large" aria-hidden="true" style="background: linear-gradient(135deg,#1b262c,#0f4c75);">
+              <span class="project-tag">Mobile</span>
+            </div>
+            <div class="project-info">
+              <h3>Mindful App</h3>
+              <p>A React Native wellness app designed with inclusive UX patterns and full screen reader support on iOS and Android. Features guided meditations, breathing exercises, and mood journaling.</p>
+              <ul class="tech-stack" aria-label="Technologies used">
+                <li>React Native</li><li>Expo</li><li>Firebase</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View Mindful App source code on GitHub (opens in new tab)">GitHub</a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="View Mindful App store page">App Store</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--full" role="listitem" data-category="design">
+            <div class="project-img project-img--large" aria-hidden="true" style="background: linear-gradient(135deg,#2d1b69,#11998e);">
+              <span class="project-tag">Design System</span>
+            </div>
+            <div class="project-info">
+              <h3>Aurora Design System</h3>
+              <p>An open-source, accessible component library with 50+ components, comprehensive documentation, and dark/light mode support. Follows WCAG 2.2 standards throughout.</p>
+              <ul class="tech-stack" aria-label="Technologies used">
+                <li>React</li><li>TypeScript</li><li>Storybook</li><li>CSS Modules</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View Aurora Design System on GitHub (opens in new tab)">GitHub</a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="View Aurora Design System documentation">Docs</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card project-card--full" role="listitem" data-category="web">
+            <div class="project-img project-img--large" aria-hidden="true" style="background: linear-gradient(135deg,#141e30,#243b55);">
+              <span class="project-tag">Web App</span>
+            </div>
+            <div class="project-info">
+              <h3>CodeCollab IDE</h3>
+              <p>A browser-based collaborative code editor with real-time sync, syntax highlighting, and video chat. Built on WebSockets and Monaco Editor with full keyboard accessibility.</p>
+              <ul class="tech-stack" aria-label="Technologies used">
+                <li>WebSockets</li><li>Monaco Editor</li><li>WebRTC</li><li>Redis</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="View CodeCollab source code on GitHub (opens in new tab)">GitHub</a>
+                <a href="#" class="btn btn-primary btn-sm" aria-label="View CodeCollab live demo">Live Demo</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <time datetime="2026">2026</time> Alex Rivera. Built with semantic HTML5 &amp; CSS.</p>
+      <nav aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile (opens in new tab)">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

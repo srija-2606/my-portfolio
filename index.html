@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alex Rivera – Full-Stack Developer & UI/UX Designer crafting elegant digital experiences. View my portfolio, projects, and get in touch." />
+  <meta name="keywords" content="full-stack developer, UI UX designer, web developer, portfolio, JavaScript, React, Node.js" />
+  <meta name="author" content="Alex Rivera" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Rivera | Full-Stack Developer & Designer" />
+  <meta property="og:description" content="Crafting elegant digital experiences with clean code and thoughtful design." />
+  <meta property="og:url" content="https://alexrivera.dev" />
+  <meta property="og:image" content="https://alexrivera.dev/assets/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alex Rivera | Full-Stack Developer & Designer" />
+  <meta name="twitter:description" content="Crafting elegant digital experiences with clean code and thoughtful design." />
+
+  <title>Alex Rivera | Full-Stack Developer & Designer</title>
+  <link rel="canonical" href="https://alexrivera.dev/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Skip to main content link for keyboard/screen reader users -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Alex Rivera – Home">
+        <span aria-hidden="true">AR</span>
+      </a>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+        <ul role="list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" aria-controls="mobile-menu" aria-expanded="false" aria-label="Open navigation menu">
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+        <span class="bar" aria-hidden="true"></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
+      <ul role="list">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ========== MAIN CONTENT ========== -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="hero-eyebrow" aria-label="Role">Full-Stack Developer & Designer</p>
+          <h1 id="hero-heading">
+            Crafting digital<br />
+            <em>experiences</em><br />
+            that matter.
+          </h1>
+          <p class="hero-desc">
+            I build fast, accessible, beautiful web applications — from pixel-perfect interfaces to robust back-end systems.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/projects.html" class="btn btn-primary">View My Work</a>
+            <a href="pages/contact.html" class="btn btn-outline">Get in Touch</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="blob"></div>
+          <div class="code-card">
+            <pre><code><span class="c-keyword">const</span> developer = {
+  <span class="c-key">name</span>: <span class="c-str">"Alex Rivera"</span>,
+  <span class="c-key">skills</span>: [<span class="c-str">"React"</span>, <span class="c-str">"Node"</span>, <span class="c-str">"UI/UX"</span>],
+  <span class="c-key">passion</span>: <span class="c-str">"clean code"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-hint" aria-hidden="true">
+        <span>scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section" aria-label="Career highlights">
+      <div class="container">
+        <ul class="stats-list" role="list">
+          <li class="stat-item">
+            <strong class="stat-number" aria-label="5 years of experience">5+</strong>
+            <span class="stat-label">Years Experience</span>
+          </li>
+          <li class="stat-item">
+            <strong class="stat-number" aria-label="40 projects completed">40+</strong>
+            <span class="stat-label">Projects Completed</span>
+          </li>
+          <li class="stat-item">
+            <strong class="stat-number" aria-label="20 happy clients">20+</strong>
+            <span class="stat-label">Happy Clients</span>
+          </li>
+          <li class="stat-item">
+            <strong class="stat-number" aria-label="100 Lighthouse score">100</strong>
+            <span class="stat-label">Lighthouse Score</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="projects-heading">Featured Work</h2>
+          <p>A selection of recent projects I'm proud of.</p>
+        </header>
+
+        <div class="projects-grid" role="list">
+
+          <article class="project-card" role="listitem">
+            <div class="project-img" aria-hidden="true" style="background: linear-gradient(135deg,#1a1a2e,#16213e);">
+              <span class="project-tag">Web App</span>
+            </div>
+            <div class="project-info">
+              <h3>FinTrack Dashboard</h3>
+              <p>A real-time personal finance tracker with interactive charts, budget alerts, and accessible data tables.</p>
+              <a href="pages/projects.html" class="project-link" aria-label="View FinTrack Dashboard project details">View Project →</a>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <div class="project-img" aria-hidden="true" style="background: linear-gradient(135deg,#0f3460,#533483);">
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <div class="project-info">
+              <h3>ShopEase Platform</h3>
+              <p>Fully accessible e-commerce platform with keyboard navigation, ARIA live regions, and WCAG AA compliance.</p>
+              <a href="pages/projects.html" class="project-link" aria-label="View ShopEase Platform project details">View Project →</a>
+            </div>
+          </article>
+
+          <article class="project-card" role="listitem">
+            <div class="project-img" aria-hidden="true" style="background: linear-gradient(135deg,#1b262c,#0f4c75);">
+              <span class="project-tag">Mobile</span>
+            </div>
+            <div class="project-info">
+              <h3>Mindful App</h3>
+              <p>A React Native wellness app designed with inclusive UX patterns and full screen reader support.</p>
+              <a href="pages/projects.html" class="project-link" aria-label="View Mindful App project details">View Project →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="section-cta">
+          <a href="pages/projects.html" class="btn btn-outline">See All Projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Snapshot -->
+    <section class="skills-section" aria-labelledby="skills-heading">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="skills-heading">Tech Stack</h2>
+          <p>Tools and technologies I work with daily.</p>
+        </header>
+        <ul class="skills-grid" role="list" aria-label="Technology skills">
+          <li class="skill-chip">React</li>
+          <li class="skill-chip">Node.js</li>
+          <li class="skill-chip">TypeScript</li>
+          <li class="skill-chip">PostgreSQL</li>
+          <li class="skill-chip">Next.js</li>
+          <li class="skill-chip">Figma</li>
+          <li class="skill-chip">GraphQL</li>
+          <li class="skill-chip">AWS</li>
+          <li class="skill-chip">Docker</li>
+          <li class="skill-chip">HTML5 & CSS3</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner" aria-labelledby="cta-heading">
+      <div class="container cta-inner">
+        <h2 id="cta-heading">Have a project in mind?</h2>
+        <p>Let's build something great together.</p>
+        <a href="pages/contact.html" class="btn btn-primary">Start a Conversation</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>&copy; <time datetime="2026">2026</time> Alex Rivera. Built with semantic HTML5 &amp; CSS.</p>
+      <nav aria-label="Footer navigation">
+        <ul role="list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="pages/about.html">About</a></li>
+          <li><a href="pages/projects.html">Projects</a></li>
+          <li><a href="pages/contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social-links" aria-label="Social media links">
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile (opens in new tab)">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile (opens in new tab)">LinkedIn</a>
+        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter profile (opens in new tab)">Twitter</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
